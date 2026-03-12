@@ -1,423 +1,276 @@
-# OpenClaw Linux Wizard 🐧🚀
+# 🐧 OpenClaw Linux 极速安装指南
 
-[English](#english) | [中文](#中文)
+<div align="center">
 
----
+![OpenClaw Logo](https://img.shields.io/badge/OpenClaw-AI%20Assistant-blue)
+![Linux](https://img.shields.io/badge/Linux-Ubuntu%2022.04-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Stars](https://img.shields.io/github/stars/Johnson811222/OpenClaw-Linux-Wizard?style=social)
 
-<a name="english"></a>
-## 🚀 OpenClaw Linux Wizard - Your AI Assistant Deployment Expert
+**快速在Ubuntu/Linux上部署完整的OpenClaw AI助手生态系统**
 
-### ✨ **One-Click OpenClaw Installation for Linux**
+[📖 文档](#-快速开始) | [⚡ 功能特性](#-功能特性) | [🛠️ 安装步骤](#️-安装步骤) | [📱 飞书集成](#-飞书集成) | [🌟 Star历史](#-star历史)
 
-**OpenClaw Linux Wizard** is the ultimate guide and automation toolkit for deploying OpenClaw AI assistant on Linux systems. Get from zero to fully functional AI assistant with Feishu integration in under 15 minutes!
+</div>
 
-![License](https://img.shields.io/github/license/Johnson811222/OpenClaw-Linux-Wizard)
-![Stars](https://img.shields.io/github/stars/Johnson811222/OpenClaw-Linux-Wizard)
-![Linux](https://img.shields.io/badge/Linux-Ubuntu%20|%20Debian%20|%20CentOS%20|%20Fedora%20|%20Arch-blue)
+## ✨ 项目亮点
 
-### 🎯 **Why Choose This Guide?**
+<div align="center">
 
-| Feature | Benefit |
-|---------|---------|
-| **🚀 One-Click Installation** | No technical knowledge required |
-| **🔧 Complete Automation** | All core skills automatically installed |
-| **💬 Feishu Integration** | Ready-to-use chat integration |
-| **⏰ Automated Tasks** | Scheduled tasks and monitoring |
-| **🛡️ Security Hardening** | Built-in security checks and optimizations |
-| **📊 Verification Tools** | Complete installation validation |
+| 特性 | 描述 | 状态 |
+|------|------|------|
+| ⚡ **10分钟部署** | 极速安装体验 | ✅ |
+| 🎯 **一键脚本** | 自动化安装配置 | ✅ |
+| 🔌 **飞书深度集成** | 企业级消息协作 | ✅ |
+| 🛠️ **18个核心技能** | 完整功能生态 | ✅ |
+| ⏰ **cron定时任务** | 系统级自动化 | ✅ |
+| 🔒 **安全加固** | 权限控制最佳实践 | ✅ |
 
-### ⚡ **Quick Start (5 Minutes)**
+</div>
 
-```bash
-# 1. One command installation (Recommended)
-curl -fsSL https://raw.githubusercontent.com/Johnson811222/OpenClaw-Linux-Wizard/main/install.sh | sudo bash
-
-# 2. Or download and run
-curl -fsSL https://raw.githubusercontent.com/Johnson811222/OpenClaw-Linux-Wizard/main/install.sh -o install-openclaw.sh
-chmod +x install-openclaw.sh
-sudo ./install-openclaw.sh
-```
-
-### 📋 **What You Get**
-
-#### **Complete Installation Package:**
-- ✅ **OpenClaw Core** - Latest version with all dependencies
-- ✅ **Core Skills** - Feishu, GitHub, Weather, News, etc.
-- ✅ **Feishu Integration** - Pre-configured chat and document access
-- ✅ **Automation Scripts** - Daily tasks and maintenance
-- ✅ **Security Configuration** - Hardened setup for production use
-- ✅ **Troubleshooting Guide** - Solutions for common issues
-
----
-
-<a name="中文"></a>
-## 🚀 OpenClaw Linux 向导 - 您的AI助手部署专家
-
-### ✨ **Linux一键安装OpenClaw**
-
-**OpenClaw Linux向导**是在Linux系统上部署OpenClaw AI助手的终极指南和自动化工具包。在15分钟内从零开始获得具有飞书集成的全功能AI助手！
-
-### 🎯 **为什么选择本指南？**
-
-| 功能 | 优势 |
-|------|------|
-| **🚀 一键安装** | 无需技术知识 |
-| **🔧 完全自动化** | 所有核心技能自动安装 |
-| **💬 飞书集成** | 即用型聊天集成 |
-| **⏰ 自动化任务** | 计划任务和监控 |
-| **🛡️ 安全加固** | 内置安全检查和优化 |
-| **📊 验证工具** | 完整的安装验证 |
-
-### ⚡ **快速开始（5分钟）**
+## 📊 安装统计
 
 ```bash
-# 1. 一键安装（推荐）
-curl -fsSL https://raw.githubusercontent.com/Johnson811222/OpenClaw-Linux-Wizard/main/install.sh | sudo bash
-
-# 2. 或下载后运行
-curl -fsSL https://raw.githubusercontent.com/Johnson811222/OpenClaw-Linux-Wizard/main/install.sh -o install-openclaw.sh
-chmod +x install-openclaw.sh
-sudo ./install-openclaw.sh
+# 验证安装结果
+✅ Node.js v18+      ✅ OpenClaw CLI
+✅ 飞书连接正常      ✅ 18个核心技能  
+✅ cron任务就绪      ✅ 文件操作权限
+✅ 服务自启动        ✅ 系统监控
 ```
 
-### 📋 **您将获得**
+## 🚀 快速开始
 
-#### **完整的安装包：**
-- ✅ **OpenClaw核心** - 最新版本及所有依赖
-- ✅ **核心技能** - 飞书、GitHub、天气、新闻等
-- ✅ **飞书集成** - 预配置的聊天和文档访问
-- ✅ **自动化脚本** - 日常任务和维护
-- ✅ **安全配置** - 生产环境加固设置
-- ✅ **故障排除指南** - 常见问题解决方案
+### 1. 系统要求
+- **Ubuntu 22.04 LTS** 或更高版本
+- **2GB+ 内存**（推荐4GB）
+- **10GB+ 磁盘空间**
+- **稳定的网络连接**
 
-## 🐧 **支持的Linux系统**
-
-### **完全支持并测试**
-- **Ubuntu** 20.04 LTS, 22.04 LTS, 24.04 LTS
-- **Debian** 11 (Bullseye), 12 (Bookworm)
-- **CentOS** 8, Stream 9
-- **Rocky Linux** 8, 9
-- **AlmaLinux** 8, 9
-- **Fedora** 34, 35, 36, 37, 38
-- **Arch Linux** (最新版)
-
-### **社区测试**
-- **Linux Mint** 20+, 21+
-- **Pop!_OS** 22.04+
-- **openSUSE** Leap 15.4+, Tumbleweed
-- **Manjaro** (最新版)
-
-## 🔧 **安装脚本功能**
-
-### **完全自动化流程**
-安装脚本 `install.sh` 自动执行以下步骤：
-
-1. **✅ 系统检测** - 自动识别Linux发行版
-2. **✅ 依赖安装** - 安装所有必需软件包
-3. **✅ OpenClaw安装** - 通过npm安装OpenClaw
-4. **✅ 飞书配置** - 自动配置飞书集成
-5. **✅ 服务设置** - 创建systemd服务自动启动
-6. **✅ 安全加固** - 应用安全最佳实践
-7. **✅ 验证检查** - 运行健康检查确保安装正确
-
-### **创建的配置文件**
-- `~/.openclaw/config.yaml` - OpenClaw主配置
-- `~/.openclaw/feishu-config.json` - 飞书集成设置
-- `/etc/systemd/system/openclaw.service` - 系统服务文件
-- `~/.openclaw/logs/` - 日志目录（带轮转）
-
-## 📱 **飞书集成配置**
-
-### **自动配置**
-向导自动完成：
-- 🔍 **检测飞书凭证**（如果可用）
-- 🔒 **安全令牌存储**（加密格式）
-- 🔄 **消息路由配置**（双向通信）
-- 📱 **多设备支持**（移动和桌面）
-
-### **飞书配置详情**
-```yaml
-feishu:
-  enabled: true
-  app_id: "your_app_id"
-  app_secret: "your_app_secret"
-  encryption: true
-  auto_sync: true
-  message_types:
-    - text
-    - image
-    - file
-    - voice
-  permissions:
-    - read_user_info
-    - send_messages
-    - access_documents
-```
-
-### **手动配置（可选）**
+### 2. 一键安装（推荐）
 ```bash
-# 手动配置飞书
-openclaw configure feishu --app-id YOUR_APP_ID --app-secret YOUR_SECRET
+# 下载安装脚本
+curl -O https://raw.githubusercontent.com/yourusername/OpenClaw-Linux-Guide/main/install.sh
+
+# 给执行权限
+chmod +x install.sh
+
+# 运行安装脚本
+./install.sh
+```
+
+### 3. 分步安装
+```bash
+# 1. 安装Node.js
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt install -y nodejs
+
+# 2. 安装OpenClaw
+npm install -g openclaw
+
+# 3. 初始化配置
+openclaw init
+```
+
+## ⚡ 功能特性
+
+### 🎭 AI助手核心
+- **智能对话**：自然语言交互
+- **文件操作**：创建、编辑、整理文件
+- **网页搜索**：实时信息查询
+- **天气查询**：全球天气信息
+
+### 🔌 飞书集成
+- **即时消息**：发送/接收消息
+- **文档管理**：飞书文档操作
+- **云盘同步**：文件上传下载
+- **知识库**：Wiki内容管理
+
+### 🛠️ 核心技能
+```bash
+# 已包含的18个核心技能
+✅ feishu-doc     # 飞书文档
+✅ file-manager   # 文件管理  
+✅ brave-search   # 网页搜索
+✅ weather        # 天气查询
+✅ github         # GitHub集成
+✅ auto-updater   # 自动更新
+# ... 更多技能
+```
+
+### ⏰ 自动化任务
+- **早晨问候**：每天7:00自动发送
+- **工作空间整理**：每周自动整理
+- **技能更新**：定期检查更新
+- **系统维护**：日志清理、备份
+
+## 🛠️ 安装步骤
+
+### 第1步：环境准备
+```bash
+# 更新系统
+sudo apt update
+sudo apt upgrade -y
+
+# 安装基础工具
+sudo apt install -y curl wget git build-essential
+```
+
+### 第2步：OpenClaw安装
+```bash
+# 全局安装OpenClaw
+npm install -g openclaw
+
+# 验证安装
+openclaw --version
+```
+
+### 第3步：飞书配置
+1. 访问[飞书开放平台](https://open.feishu.cn/)
+2. 创建企业自建应用
+3. 获取应用凭证（App ID/Secret）
+4. 配置环境变量
+
+### 第4步：技能安装
+```bash
+# 一键安装所有技能
+./install-skills.sh
+
+# 或选择安装
+clawhub install feishu-doc
+clawhub install file-manager
+```
+
+### 第5步：验证安装
+```bash
+# 运行验证脚本
+./verify-installation.sh
 
 # 测试飞书连接
-openclaw test feishu
+openclaw feishu test
 
-# 查看飞书配置
-cat ~/.openclaw/feishu-config.json
+# 发送测试消息
+openclaw feishu send --message "Hello, OpenClaw!"
 ```
 
-## 🛡️ **安全特性**
+## 📱 飞书集成
 
-### **内置安全**
-- 🔒 **加密配置** - 敏感数据加密存储
-- 👤 **有限权限** - OpenClaw以专用用户运行
-- 🛡️ **防火墙规则** - 自动防火墙配置
-- 📝 **日志监控** - 安全事件日志启用
-- 🔄 **自动更新** - 安全补丁自动应用
-
-### **安全验证**
+### 应用配置
 ```bash
-# 运行安全审计
-sudo ./scripts/security-audit.sh
+# 设置环境变量
+export FEISHU_APP_ID="your_app_id"
+export FEISHU_APP_SECRET="your_app_secret"
+export FEISHU_VERIFICATION_TOKEN="your_token"
 
-# 检查漏洞
-sudo ./scripts/vulnerability-scan.sh
-
-# 查看安全日志
-sudo journalctl -u openclaw -g "security"
+# 永久设置
+echo 'export FEISHU_APP_ID="your_app_id"' >> ~/.bashrc
+echo 'export FEISHU_APP_SECRET="your_app_secret"' >> ~/.bashrc
+source ~/.bashrc
 ```
 
-## 📊 **安装后步骤**
+### 权限设置
+- `im:message` - 发送/接收消息
+- `drive:drive:readonly` - 读取云文档
+- `wiki:wiki:readonly` - 读取知识库
 
-### **验证命令**
+### 消息示例
 ```bash
-# 检查OpenClaw是否安装
-which openclaw
-openclaw --version
+# 发送文本消息
+openclaw feishu send --user "ou_xxx" --message "你好！"
 
-# 检查服务状态
-sudo systemctl status openclaw
+# 发送富文本消息
+openclaw feishu send --user "ou_xxx" --message "**重要通知**\n请查看文档"
 
-# 查看实时日志
-sudo journalctl -u openclaw -f
-
-# 运行健康检查
-./scripts/health-check.sh
+# 定时发送（使用cron）
+# 0 7 * * * cd /path && ./morning-greeting-template.sh
 ```
 
-### **管理命令**
+## 📁 项目结构
+
+```
+OpenClaw-Linux-Guide/
+├── 📄 README.md                    # 项目说明
+├── ⚡ install.sh                   # 一键安装脚本
+├── 🛠️ install-skills.sh           # 技能安装脚本
+├── 🌅 morning-greeting-template.sh # 早晨问候模板
+├── ✅ verify-installation.sh      # 安装验证脚本
+├── 📁 workspace-organizer.sh      # 工作空间整理
+├── ⚙️ openclaw-config-template.json # 配置模板
+├── 🐛 troubleshooting-checklist.md # 故障排除
+├── 📋 quick-reference.md          # 快速参考
+├── 📊 CHANGELOG.md                # 更新日志
+└── 📄 LICENSE                     # 许可证
+```
+
+## 🐛 故障排除
+
+### 常见问题
 ```bash
-# 启动/停止/重启OpenClaw
-sudo systemctl start openclaw
-sudo systemctl stop openclaw
-sudo systemctl restart openclaw
+# 1. OpenClaw命令找不到
+export PATH=$HOME/.npm-global/bin:$PATH
+echo 'export PATH=$HOME/.npm-global/bin:$PATH' >> ~/.bashrc
 
-# 启用/禁用自动启动
-sudo systemctl enable openclaw
-sudo systemctl disable openclaw
+# 2. 飞书连接失败
+# 检查环境变量是否正确设置
 
-# 检查资源使用
-./scripts/monitor-resources.sh
+# 3. 权限被拒绝
+sudo chmod -R 755 ~/.openclaw
+
+# 4. 端口被占用
+# 修改配置文件中的端口号
 ```
 
-## 🐛 **故障排除指南**
+### 错误代码参考
+- **ECONNREFUSED**: 连接被拒绝，检查Gateway服务
+- **EACCES**: 权限被拒绝，检查文件权限
+- **ENOENT**: 文件不存在，检查路径
+- **ETIMEDOUT**: 连接超时，检查网络
 
-### **常见问题及解决方案**
+## 🤝 贡献指南
 
-#### **问题1：安装因缺少依赖而失败**
-```bash
-# 手动修复依赖
-sudo apt update && sudo apt install -y nodejs npm python3 git curl  # Ubuntu/Debian
-sudo yum install -y nodejs npm python3 git curl                    # CentOS/RHEL
-sudo dnf install -y nodejs npm python3 git curl                    # Fedora
-sudo pacman -Sy --noconfirm nodejs npm python git curl             # Arch
-```
+### 报告问题
+1. 查看[故障排除](#-故障排除)
+2. 搜索[现有Issue](https://github.com/Johnson811222/OpenClaw-Linux-Wizard/issues)
+3. 创建新Issue，提供详细错误信息
 
-#### **问题2：飞书连接问题**
-```bash
-# 重置飞书配置
-openclaw configure --feishu --reset
-
-# 检查飞书凭证
-cat ~/.openclaw/feishu-config.json
-
-# 测试连接
-openclaw test --feishu
-```
-
-#### **问题3：服务无法启动**
-```bash
-# 检查服务日志
-sudo journalctl -u openclaw -n 100 --no-pager
-
-# 检查配置
-openclaw validate-config
-
-# 以调试模式重启服务
-sudo systemctl restart openclaw
-sudo journalctl -u openclaw -f
-```
-
-#### **问题4：权限错误**
-```bash
-# 修复权限
-sudo chown -R $USER:$USER ~/.openclaw
-sudo chmod 755 ~/.openclaw
-
-# 检查SELinux/AppArmor
-sudo setenforce 0  # 临时禁用SELinux (RHEL/CentOS)
-sudo aa-status     # 检查AppArmor状态 (Ubuntu/Debian)
-```
-
-## 🔄 **更新与维护**
-
-### **更新OpenClaw**
-```bash
-# 更新到最新版本
-sudo npm update -g openclaw
-
-# 更新配置
-openclaw update-config
-```
-
-### **备份与恢复**
-```bash
-# 备份配置
-./scripts/backup-config.sh
-
-# 从备份恢复
-./scripts/restore-config.sh backup_file.tar.gz
-```
-
-### **系统维护**
-```bash
-# 清理旧日志
-./scripts/clean-logs.sh
-
-# 检查磁盘空间
-./scripts/check-disk.sh
-
-# 监控性能
-./scripts/monitor-performance.sh
-```
-
-## 📞 **支持与资源**
-
-### **官方资源**
-- 📖 **文档**: https://docs.openclaw.ai
-- 💬 **社区Discord**: https://discord.gg/clawd
-- 🐛 **问题追踪**: https://github.com/Johnson811222/OpenClaw-Linux-Wizard/issues
-- 📧 **邮件支持**: support@openclaw.ai
-
-### **社区资源**
-- 🌐 **网站**: https://openclaw.ai
-- 🐦 **Twitter**: @OpenClawAI
-- 📺 **YouTube教程**: OpenClaw频道
-- 👥 **用户群组**: 地区性OpenClaw社区
-
-## 🤝 **贡献**
-
-我们欢迎贡献！以下是您可以提供帮助的方式：
-
-### **报告问题**
-发现错误？有功能请求？
-1. 检查现有问题
-2. 创建包含详细信息的新问题
-3. 包括系统信息和日志
-
-### **提交代码**
-1. Fork仓库
+### 提交改进
+1. Fork项目仓库
 2. 创建功能分支
-3. 进行更改并包含测试
-4. 提交拉取请求
+3. 提交更改并测试
+4. 创建Pull Request
 
-### **改进文档**
-1. Fork仓库
-2. 编辑文档文件
-3. 提交拉取请求
+### 开发规范
+- 使用Bash编写脚本
+- 添加详细的注释说明
+- 包含错误处理逻辑
+- 更新相关文档
 
-### **开发设置**
-```bash
-# 克隆仓库
-git clone https://github.com/Johnson811222/OpenClaw-Linux-Wizard.git
-cd OpenClaw-Linux-Wizard
+## 📄 许可证
 
-# 安装开发依赖
-npm install
+本项目基于 [MIT License](LICENSE) 开源。
 
-# 运行测试
-npm test
+## 🙏 致谢
 
-# 构建文档
-npm run docs
-```
+感谢以下项目和社区：
+- [OpenClaw](https://github.com/openclaw/openclaw) - 优秀的AI助手平台
+- [飞书开放平台](https://open.feishu.cn/) - 强大的企业级API
+- 所有贡献者和用户
 
-## 📄 **许可证**
+## 🌟 Star历史
 
-本项目采用 **MIT许可证** - 详情请见 [LICENSE](LICENSE) 文件。
+[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/OpenClaw-Linux-Guide&type=Date)](https://star-history.com/#yourusername/OpenClaw-Linux-Guide&Date)
 
-### **第三方许可证**
-- OpenClaw: MIT许可证
-- Node.js: MIT许可证
-- Python: PSF许可证
-- 飞书SDK: Apache 2.0
+## 📞 联系
 
-## 🙏 **致谢**
-
-### **核心团队**
-- **OpenClaw开发团队** - 创建了出色的AI框架
-- **飞书平台团队** - 提供了优秀的消息基础设施
-- **Linux社区** - 提供了强大的开源基础
-
-### **贡献者**
-感谢所有帮助改进此安装向导的贡献者！
-
-### **特别感谢**
-- 早期采用者和测试者
-- 社区版主
-- 文档贡献者
-- 翻译志愿者
-
-## 📈 **版本历史**
-
-### **v1.0.0（当前）**
-- 初始发布
-- 多发行版支持
-- 完全自动化
-- 飞书集成
-- 安全加固
-
-### **计划功能**
-- GUI安装向导
-- Docker容器支持
-- Kubernetes部署
-- 高级监控
-- 多语言支持
+- **GitHub Issues**: [报告问题](https://github.com/Johnson811222/OpenClaw-Linux-Wizard/issues)
+- **Discord社区**: [加入讨论](https://discord.com/invite/clawd)
+- **官方文档**: [查看文档](https://docs.openclaw.ai)
 
 ---
 
-## 🎉 **立即开始！**
+<div align="center">
 
-```bash
-# 开始您的OpenClaw之旅
-curl -fsSL https://raw.githubusercontent.com/Johnson811222/OpenClaw-Linux-Wizard/main/install.sh | sudo bash
-```
+**如果这个项目对你有帮助，请给个⭐️ Star支持！**
 
-### **需要帮助？**
-- 加入我们的 [Discord社区](https://discord.gg/clawd)
-- 查看 [文档](https://docs.openclaw.ai)
-- 提交 [问题](https://github.com/Johnson811222/OpenClaw-Linux-Wizard/issues)
+[⬆️ 返回顶部](#-openclaw-linux-极速安装指南)
 
-### **分享喜爱**
-如果您觉得此向导有帮助，请：
-- ⭐ 为仓库加星
-- 🐛 报告问题
-- 💬 与朋友分享
-- 🔄 贡献改进
-
----
-
-**愉快部署！您的AI助手只需一个命令！** 🚀
-
-*最后更新: $(date)*
-*维护者: OpenClaw团队*
+</div>

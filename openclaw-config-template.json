@@ -1,0 +1,186 @@
+{
+  "//": "OpenClaw 配置文件模板 for Linux",
+  "//": "作者：OpenClaw安装指南项目",
+  "//": "日期：2026年3月12日",
+  "//": "将此文件保存为 ~/.openclaw/config.json 并修改相应值",
+  
+  "// 基础配置": "",
+  "model": "deepseek/deepseek-chat",
+  "defaultModel": "deepseek/deepseek-chat",
+  "workspace": "/home/$(whoami)/.openclaw/workspace",
+  
+  "// 思考模式配置": "",
+  "thinking": {
+    "enabled": false,
+    "stream": false
+  },
+  
+  "// 插件配置": "",
+  "plugins": {
+    "allow": ["feishu"],
+    "feishu": {
+      "//": "飞书插件配置，以下值需要从飞书开放平台获取",
+      "appId": "YOUR_APP_ID_HERE",
+      "appSecret": "YOUR_APP_SECRET_HERE",
+      "verificationToken": "YOUR_VERIFICATION_TOKEN_HERE",
+      "encryptKey": "YOUR_ENCRYPT_KEY_HERE",
+      "//": "消息发送配置",
+      "send": {
+        "retry": 3,
+        "timeout": 10000
+      }
+    }
+  },
+  
+  "// 工具策略配置": "",
+  "toolpolicy": "coding",
+  
+  "// 沙箱配置": "",
+  "sandbox": {
+    "allowFileSystem": true,
+    "allowNetwork": true,
+    "allowExec": true,
+    "//": "文件系统限制（可选）",
+    "restrictPaths": [
+      "/home/$(whoami)/.openclaw",
+      "/home/$(whoami)/openclaw-workspace"
+    ]
+  },
+  
+  "// 网关配置": "",
+  "gateway": {
+    "port": 3000,
+    "host": "localhost",
+    "//": "CORS 配置",
+    "cors": {
+      "origin": ["http://localhost:*"],
+      "credentials": true
+    }
+  },
+  
+  "// 会话配置": "",
+  "sessions": {
+    "defaultTimeout": 3600,
+    "cleanupInterval": 300,
+    "maxHistory": 1000
+  },
+  
+  "// 日志配置": "",
+  "logging": {
+    "level": "info",
+    "file": "/home/$(whoami)/.openclaw/logs/openclaw.log",
+    "maxSize": "10m",
+    "maxFiles": 5,
+    "//": "日志级别：error, warn, info, debug, trace"
+  },
+  
+  "// 缓存配置": "",
+  "cache": {
+    "enabled": true,
+    "ttl": 3600,
+    "maxSize": "100mb"
+  },
+  
+  "// 技能配置": "",
+  "skills": {
+    "autoUpdate": true,
+    "updateCheckInterval": 86400,
+    "//": "技能目录",
+    "paths": [
+      "/home/$(whoami)/.openclaw/workspace/skills"
+    ]
+  },
+  
+  "// 定时任务配置": "",
+  "cron": {
+    "enabled": true,
+    "jobs": [
+      {
+        "name": "morning-greeting",
+        "schedule": "0 7 * * *",
+        "command": "bash /path/to/morning-greeting.sh",
+        "enabled": true,
+        "description": "每天7:00发送早晨问候"
+      },
+      {
+        "name": "workspace-cleanup",
+        "schedule": "0 2 * * 0",
+        "command": "bash /path/to/workspace-organizer.sh",
+        "enabled": true,
+        "description": "每周日2:00整理工作空间"
+      },
+      {
+        "name": "skill-update-check",
+        "schedule": "0 3 * * *",
+        "command": "clawhub update --dry-run",
+        "enabled": true,
+        "description": "每天3:00检查技能更新"
+      }
+    ]
+  },
+  
+  "// 文件操作配置": "",
+  "fileOperations": {
+    "//": "允许的文件扩展名",
+    "allowedExtensions": [
+      ".txt", ".md", ".json", ".yaml", ".yml", 
+      ".js", ".ts", ".py", ".sh", ".bash",
+      ".csv", ".xml", ".html", ".css"
+    ],
+    "//": "最大文件大小（字节）",
+    "maxFileSize": 10485760,
+    "//": "备份配置",
+    "backup": {
+      "enabled": true,
+      "maxBackups": 5,
+      "backupDir": "/home/$(whoami)/.openclaw/backups"
+    }
+  },
+  
+  "// 安全配置": "",
+  "security": {
+    "//": "API 密钥管理",
+    "apiKeys": {
+      "encrypt": true,
+      "keyFile": "/home/$(whoami)/.openclaw/secrets.json"
+    },
+    "//": "访问控制",
+    "accessControl": {
+      "allowedIPs": ["127.0.0.1", "::1"],
+      "requireAuth": false
+    },
+    "//": "审计日志",
+    "audit": {
+      "enabled": true,
+      "logFile": "/home/$(whoami)/.openclaw/logs/audit.log"
+    }
+  },
+  
+  "// 性能优化配置": "",
+  "performance": {
+    "//": "内存限制",
+    "memory": {
+      "maxOldSpaceSize": 4096,
+      "maxSemiSpaceSize": 256
+    },
+    "//": "并发限制",
+    "concurrency": {
+      "maxWorkers": 4,
+      "maxQueueSize": 100
+    },
+    "//": "网络优化",
+    "network": {
+      "timeout": 30000,
+      "keepAlive": true
+    }
+  },
+  
+  "// 调试配置（开发用）": "",
+  "debug": {
+    "enabled": false,
+    "//": "调试模块",
+    "modules": ["openclaw:*"],
+    "//": "详细日志",
+    "verbose": false
+  }
+}
